@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIPETS</title>
+    <link rel="stylesheet" href="agendamento.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+       <div class="logo">
+            <span>
+                <i class="fa fa-paw"></i>
+                UNIPETS
+                <i class="fa fa-paw"></i>
+            </span>
+       </div>
+       <ul class="options">
+        <li><a class="meu-botao" href="../../index.html">Página Inicial</a></li>
+        <li><a class="meu-botao" href="../sobre/sobre.html">Quem Somos</a></li>
+        <li><a class="meu-botao2" href="../agendamento/agendamento.html">Agendar Consulta</a></li>
+        <li><a class="meu-botao" href="../adocao/adocao.html">Processo de Adoção</a></li>
+        <li><a class="meu-botao" href="../dicas/dicas.html">Dicas e Orientações</a></li>
+       </ul>
+       <div class="user">
+        <div class="center">
+            <div id="social-test">
+            <ul class="social">
+              <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+              <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              <li><i class="fa fa-youtube" aria-hidden="true"></i>
+              <li><i class="fa fa-twitter" aria-hidden="true"></i>
+            </li>  
+     </ul> 
+       </div>
+       <div class="hamburguer" onclick="menuMobile()">
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+       </div>
+    </nav>
+    <div class="container">
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome Completo</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Nome do Pet</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset> 
+
+        <!-- Campo de email com-->
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        
+        <div class="campo">
+            <label for="sobrenome"><strong>Numero de Contato</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset> 
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Sexo do seu animal de estimação:</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="manha" checked>Macho
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="tarde">Fêmea
+            </label>
+        </div>
+
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="campo">
+            <label for="senioridade"><strong>Horário do Agendamento de Consultas:</strong></label>
+            <select id="senioridade" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Manhã(8:00-12:00)</option>
+              <option>Tarde(12:00-18:00)</option>
+              <option>Noite(18:00-22:00)</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+            <div id="check">
+                <label><strong>Qual serviço você quer agendar?:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="pet1" value="Banho">
+                <label for="pet1"> Banho</label>
+                <input type="checkbox" id="pet2" name="pet2" value="Banho e Tosa">
+                <label for="pet2"> Banho e Tosa</label>
+                <input type="checkbox" id="pet3" name="pet3" value="Vacina">
+                <label for="pet3"> Vacina</label>
+                <input type="checkbox" id="pet4" name="pet4" value="Vacina">
+                <label for="pet5"> Outros(especifique abaixo)</label>
+            </div>
+        </fieldset>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Digite a sua observação: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+    </form>
+
+</body>
+
+</html>
