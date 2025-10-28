@@ -36,7 +36,7 @@ Design moderno e amigável, focado na experiência do usuário. Paleta proposta:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/<seu-usuario>/<seu-repo>.git
+git clone https://github.com/<devlucaslopesf>/<Unipets>.git
 cd <seu-repo>
 ```
 
